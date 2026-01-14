@@ -118,7 +118,7 @@ main p {
 aside p {
     color: white;
     background-color: #272727;
-    margin: 30px -15px 0px -15px;
+    margin: 0%;
     padding: 15px;
     border-radius: 15px 15px 0px 0px;
     box-shadow: 0px 7px 10px  #0000005e;
@@ -168,9 +168,8 @@ img.vgames {
 /*VIDEOS*/
 div.video {
     background: var(--darkgray);
-    margin: 0px -15px 30px -15px;
     padding: 15px;
-    padding-bottom: 280px;
+    padding-bottom: 56.25%;
     position: relative;
     border-radius: 0px 0px 15px 15px;
     box-shadow: 0px 7px 10px  #0000005e;
@@ -178,10 +177,10 @@ div.video {
 
 div.video > iframe {
     position: absolute;
-    top: 18px;
-    left: 22.5%;
-    width: 461px;
-    height: 260px;
+    top: 5%;
+    left: 5%;
+    width: 90%; /*461px, 260px*/
+    height: 90%;
     border-radius: 10px;
 }
 
@@ -190,6 +189,7 @@ div.info {
     font-size: 14px;
     height: auto;
     text-align: center;
+    margin-top: 65px;
     
 }
 
@@ -229,17 +229,38 @@ div.impt li {
 }
 
 /*Referências*/
-.ref {
-    
+.all-ref {
     color: #ffffff;
+    text-align: left;
+    margin-top: 30px;
+    box-shadow: 0px 7px 10px  #0000005e;
+    border-radius: 20px; 
 }
 
-.ref p {
+.all-ref p {
     background-color: #272727;
+    margin: 0%;
+    padding: 7px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .box_ref {
     background-color: var(--darkgray);
     list-style-position: inside;
     list-style-type: disc;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+.box_ref ul {
+    text-align: left;
+    padding: 15px;
+}
+
+.box_ref a {
+    color: var(--ps_blue);
+    text-decoration: none;
+    
 }
