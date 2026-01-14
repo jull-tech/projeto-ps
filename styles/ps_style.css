@@ -7,6 +7,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    word-wrap: break-word;
 }
 
 :root {
@@ -30,11 +31,11 @@ body {
 }
 header {
     background-color: var(--ps_lightgray);
-    height: 155px;
+    height: 110px;
 }
 
 div.logolink {
-    width: 145px;
+    width: 95px;
     margin: auto;
 
 }
@@ -42,41 +43,43 @@ div.logolink {
 .logoimg { /*inline*/
     display: block;
     margin: auto;
-    width: 140px;
-    padding: 15px;
+    width: 95px;
+    padding: 10px;
 
 }
 
 nav {
     background-color: var(--ps_gray);
-    padding: 5px;
-    margin: auto;
+    padding: 2px;
     text-align: center;
     box-shadow: 0px 7px 10px  #0000001f;
-    border-bottom: var(--darkgray) 4px solid;
+    border-bottom: var(--darkgray) 3px solid;
     
 }
 
 nav a {
-    font: normal 16.5px 'Anta', sans-serif;
+    font: normal 17px 'Anta', sans-serif;
     text-decoration: none;
     color: var(--darkgray);
-    padding: 5px 10px;
-    margin: auto;
+    padding: 0px 10px;
     
 }
 
 nav > a:hover {
     color: white;
-    border-bottom: var(--ps_red) 7px solid;
-    transition-duration: 0.12s;
+    border-bottom: var(--ps_red) 6px solid;
+    transition-duration: 0.15s;
     background-color: #919191;
+    height: auto;
+    padding: 4px 10px;
 }
 
 nav > a:active {
     color: white;
     background-color: var(--ps_red);
     transition-duration: 0.4s;
+    padding: 4px 10px;
+    height: auto;
 
 }
 
@@ -153,10 +156,10 @@ div.info a:active {
 
 /*IMAGENS*/
 main img {
-    min-width: 300px;
-    max-width: 350px;
     display: block;
     margin: auto;
+    max-width: 350px;
+    min-width: 250px;
 }
 
 img.vgames {
@@ -187,7 +190,6 @@ div.video > iframe {
 /*Final*/
 div.info {
     font-size: 14px;
-    height: auto;
     text-align: center;
     margin-top: 65px;
     
@@ -196,17 +198,14 @@ div.info {
 footer {
     background-color: var(--ps_green);
     color: white;
-    padding: 15px;
-    
-    
+    padding: 15px; 
 }
 
 div.impt {
-    
     background-color: var(--ps_yellow);
     color: rgb(0, 0, 0);
     padding: 15px;
-    margin: auto;
+    
 }
 
 .impt ul {
@@ -251,16 +250,23 @@ div.impt li {
     list-style-type: disc;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+   
     
 }
 
 .box_ref ul {
     text-align: left;
-    padding: 15px;
+    padding: 15px 0px;
+    margin: 0px 20px
 }
 
 .box_ref a {
     color: var(--ps_blue);
     text-decoration: none;
     
+}
+
+.box_ref a:hover {
+    color: var(--ps_red);
+    text-decoration: underline;
 }
